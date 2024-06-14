@@ -1,11 +1,17 @@
+import GoogleLogo from "@/components/GoogleLogo";
 import HomeHeader from "@/components/HomeHeader";
 
 
-export default function Home() {
+
+
+const Home: React.FC = () => {
   return (
     <>
       <HomeHeader />
-
+      <GoogleLogo />
     </>
   );
 }
+
+
+export default Home;

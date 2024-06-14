@@ -1,16 +1,16 @@
 import Link from 'next/link'
 import React from 'react'
+
 import { TbGridDots } from 'react-icons/tb';
 import { stylesCss } from "@/styles/styles";
-
 import { HotmailUrl } from "@/links/links";
 import { ImagesGoogleUrl } from "@/links/links";
 
 
-export default function HomeHeader() {
+const HomeHeader: React.FC = () => {
   return (
     <header className={stylesCss.header}>
-      <div className={stylesCss.spaceItens}>
+      <div className={stylesCss.div}>
         <Link href={HotmailUrl} className={stylesCss.underline}>Gmail</Link>
         <Link href={ImagesGoogleUrl} className={stylesCss.underline}>Images</Link>
         <TbGridDots className={stylesCss.iconTb} />
@@ -19,3 +19,5 @@ export default function HomeHeader() {
     </header>
   )
 }
+
+export default HomeHeader;

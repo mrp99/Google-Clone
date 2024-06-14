@@ -8,7 +8,7 @@ export const stylesCss = {
     text-sm
   `,
 
-  spaceItens: `
+  div: `
     flex 
     space-x-4 
     items-center
@@ -30,4 +30,9 @@ export const stylesCss = {
     hover:shadow-md 
     transtition-shadow
   `,
+}
+
+export const imageCss = {
+  desciptLogo: "Google Logo",
+  imgStyle: "w-50 h-50"
 }
